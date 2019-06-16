@@ -1,0 +1,80 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: transparent;
+  position: static;
+}
+
+.loader {
+  max-width: 50rem;
+  width: 100%;
+  height: auto;
+  stroke-linecap: round;
+}
+
+circle {
+  fill: none;
+  stroke-width: 6;
+  animation-name: preloader;
+  animation-duration: 45s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  transform-origin: 170px 170px;
+  will-change: transform;
+  transition: 0.5s ease-in-out;
+
+  &:hover {
+    stroke-width: 12;
+    transition: 0.5s ease-in-out;
+  }
+
+  &:nth-of-type(1) {
+    stroke-dasharray: 550px;
+  }
+
+  &:nth-of-type(2) {
+    stroke-dasharray: 500px;
+  }
+
+  &:nth-of-type(3) {
+    stroke-dasharray: 450px;
+  }
+
+  &:nth-of-type(4) {
+    stroke-dasharray: 300px;
+  }
+
+  &:nth-of-type(5) {
+    stroke-dasharray: 200px;
+  }
+
+  &:nth-of-type(6) {
+    stroke-dasharray: 100px;
+  }
+
+  @for $i from 1 through 4 {
+    &:nth-of-type(#{$i}) {
+      animation-delay: -#{$i * 0.15}s;
+    }
+  }
+}
+
+@keyframes preloader {
+  50% {
+    transform: rotate(360deg);
+  }
+}
+.welcome {
+  font-size: 10rem;
+  color: white;
+  transition: 0.5s ease-in-out;
+  cursor: default;
+
+  &:hover {
+    transition: 0.5s ease-in-out;
+    font-size: 0.5rem;
+    cursor: default;
+  }
+}
