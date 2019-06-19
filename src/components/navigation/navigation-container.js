@@ -34,7 +34,7 @@ const NavigationComponent = props => {
       </div>
 
       <div className="nav-link-wrapper">
-        <NavLink to="/about-me" activeClassName="nav-link-active">
+        <NavLink to="/" activeClassName="nav-link-active">
           ammon
         </NavLink>
       </div>
