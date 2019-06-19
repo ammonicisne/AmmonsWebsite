@@ -1,0 +1,54 @@
+.containerAbout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .aboutTitle {
+    padding-top: 10rem;
+    font-size: 5rem;
+    color: white;
+  }
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+  .card {
+    width: 5rem;
+    height: 5rem;
+    background-color: white;
+    transition: 0.5s ease-in-out;
+    &:hover {
+      width: 15rem;
+      height: 10rem;
+      transition: 0.5s ease-in-out;
+    }
+  }
+  .card {
+    transition: 0.5s ease-in-out;
+    white-space: nowrap;
+    overflow: hidden;
+
+    &:hover #awards {
+      display: block;
+      transition: 0.5s ease-in-out;
+    }
+  }
+}
+
+#awards {
+  //error if changed to different ID name
+  display: none;
+  font-size: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 4s steps(60, end);
+}
+@keyframes type {
+  from {
+    width: 0;
+  }
+}

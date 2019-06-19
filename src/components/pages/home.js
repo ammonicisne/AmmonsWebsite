@@ -1,9 +1,8 @@
 import React from "react";
 
-const animate = props => {
-  console.log(props);
+export default function() {
   return (
-    <div class="container">
+    <div class="containerHome">
       <div className="welcome">W</div>
       <div className="welcome">e</div>
       <div className="welcome">l</div>
@@ -27,6 +26,4 @@ const animate = props => {
       </svg>
     </div>
   );
-};
-
-export default animate;
+}

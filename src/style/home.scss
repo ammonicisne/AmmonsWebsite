@@ -1,10 +1,9 @@
-.container {
+.containerHome {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   background-color: transparent;
-  position: static;
 }
 
 .loader {
@@ -26,7 +25,6 @@ circle {
   transition: 0.5s ease-in-out;
 
   &:hover {
-    stroke-width: 12;
     transition: 0.5s ease-in-out;
   }
 
