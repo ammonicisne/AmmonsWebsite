@@ -1,4 +1,11 @@
 import React from "react";
+import {
+  faBookReader,
+  faAward,
+  faGraduationCap,
+  faTools
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function() {
   return (
@@ -6,6 +13,9 @@ export default function() {
       <div className="aboutTitle">about me</div>
       <div className="cards">
         <div className="card">
+          <div className="icon">
+            <FontAwesomeIcon icon={faBookReader} />
+          </div>
           <div id="awards">
             MY PERCEPTION
             <div className="li">
@@ -40,6 +50,9 @@ export default function() {
         </div>
 
         <div className="card">
+          <div className="icon">
+            <FontAwesomeIcon icon={faAward} />
+          </div>
           <div id="awards">
             ACCOMPLISHMENTS
             <div className="li">
@@ -71,6 +84,9 @@ export default function() {
         </div>
 
         <div className="card">
+          <div className="icon">
+            <FontAwesomeIcon icon={faGraduationCap} />
+          </div>
           <div id="awards">
             EDUCATION
             <div className="li">Utah Valley University ​(2019) </div>
@@ -97,6 +113,9 @@ export default function() {
         </div>
 
         <div className="card">
+          <div className="icon">
+            <FontAwesomeIcon icon={faTools} />
+          </div>
           <div id="awards">
             PROFICIENCIES
             <div className="isli">Most to least</div>
