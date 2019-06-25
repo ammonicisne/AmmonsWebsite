@@ -28,7 +28,8 @@
   .card {
     width: 17rem;
     height: 7rem;
-    background-color: rgb(223, 223, 223);
+    background-color: rgb(1, 233, 250);
+    border: 5px rgb(1, 233, 250) solid;
     transition: 0.2s ease-in-out;
     &:hover {
       .icon {
@@ -37,6 +38,7 @@
         width: 0rem;
         height: 0rem;
       }
+      background-color: rgb(223, 223, 223);
       width: 70rem;
       height: 30rem;
       transition: 0.2s ease-in-out;
