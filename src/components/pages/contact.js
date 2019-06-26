@@ -9,8 +9,6 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 library.add(faGithub, faLinkedin, faInstagram);
 
-import selfImage from "../images/selfImage.png";
-
 export default function() {
   return (
     <div className="containerContact">
