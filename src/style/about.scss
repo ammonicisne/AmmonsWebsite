@@ -17,7 +17,7 @@
   font-size: 5rem;
   width: 17rem;
   height: 7rem;
-  color: rgb(37, 37, 37);
+  color: rgb(219, 219, 219);
   transition: 0.2s ease-in-out;
 }
 .cards {
@@ -28,10 +28,11 @@
   .card {
     width: 17rem;
     height: 7rem;
-    background-color: rgb(1, 233, 250);
-    border: 5px rgb(1, 233, 250) solid;
+    background-color: rgb(109, 109, 109);
+    border: 5px rgb(109, 109, 109) solid;
     transition: 0.2s ease-in-out;
     &:hover {
+      border-color: #da2d2d;
       .icon {
         transition: 0.2s ease-in-out;
         color: transparent;

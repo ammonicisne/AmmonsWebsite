@@ -5,7 +5,6 @@
   min-height: 100vh;
   background-color: transparent;
 }
-
 .loader {
   max-width: 50rem;
   width: 100%;
@@ -74,5 +73,6 @@ circle {
     transition: 0.3s ease-in-out;
     font-size: 13rem;
     cursor: default;
+    color: #da2d2d;
   }
 }

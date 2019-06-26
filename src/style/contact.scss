@@ -16,13 +16,13 @@
     font-size: 8rem;
     width: 20rem;
     height: 10rem;
-    color: rgb(1, 233, 250);
+    color: rgb(223, 223, 223);
     transition: 0.2s ease-in-out;
   }
   .dropDown {
     width: 17rem;
     height: 7rem;
-    background-color: rgb(17, 17, 17);
+    background-color: rgb(10, 10, 10);
     transition: 0.2s ease-in-out;
     display: flex;
     &:hover #contact {
@@ -30,11 +30,12 @@
       transition: 0.5s ease-in-out;
     }
     &:hover {
-      border: 5px rgb(1, 233, 250) solid;
+      border: 5px rgb(109, 109, 109) solid;
       background-color: rgb(223, 223, 223);
       width: 40rem;
       height: 46rem;
       transition: 0.2s ease-in-out;
+      border-color: #da2d2d;
       .iconPhone {
         transition: 0.2s ease-in-out;
         color: transparent;
@@ -66,5 +67,11 @@
   }
   .icons {
     font-size: 5rem;
+    transition: 0.2s ease-in-out;
+    &:hover {
+      font-size: 6rem;
+      color: #da2d2d;
+      transition: 0.2s ease-in-out;
+    }
   }
 }

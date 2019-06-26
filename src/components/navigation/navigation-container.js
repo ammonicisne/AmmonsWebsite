@@ -28,7 +28,7 @@ const NavigationComponent = props => {
       </div>
 
       <div className="nav-link-wrapper">
-        <NavLink to="/" activeClassName="nav-link-active">
+        <NavLink to="/my-projects" activeClassName="nav-link-active">
           projects
         </NavLink>
       </div>

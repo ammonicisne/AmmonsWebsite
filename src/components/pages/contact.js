@@ -1,9 +1,15 @@
 import React from "react";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faLinkedin,
+  faInstagram
+} from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-library.add(faGithub, faLinkedin);
+library.add(faGithub, faLinkedin, faInstagram);
+
+import selfImage from "../images/selfImage.png";
 
 export default function() {
   return (
@@ -25,6 +31,11 @@ export default function() {
           <div className="info">
             <a href="https://www.linkedin.com/in/ammon-cisneros/">
               <FontAwesomeIcon className="icons" icon={["fab", "linkedin"]} />
+            </a>
+          </div>
+          <div className="info">
+            <a href="https://www.instagram.com/ammoncodes/">
+              <FontAwesomeIcon className="icons" icon={["fab", "instagram"]} />
             </a>
           </div>
         </div>

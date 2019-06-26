@@ -1,0 +1,46 @@
+.project-items-wrapper {
+  display: grid;
+  font-size: 1.5rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  .project-item-wrapper {
+    position: relative;
+
+    .project-img-background {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 250px;
+      width: 100%;
+    }
+
+    .img-text-wrapper {
+      position: absolute;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      text-align: center;
+      padding-left: 100px;
+      padding-right: 100px;
+
+      .subtitle {
+        transition: 1s ease-in-out;
+        color: transparent;
+      }
+    }
+
+    .img-text-wrapper:hover .subtitle {
+      color: #da2d2d;
+      font-weight: 400;
+      cursor: pointer;
+    }
+  }
+}
+
+.image-blur {
+  transition: 1s;
+  filter: brightness(10%);
+}
