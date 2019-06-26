@@ -8,7 +8,6 @@ import About from "./pages/about";
 import Projects from "./pages/projects";
 
 export default class App extends Component {
-  //TODO Create Game, API rendered projects, Default fallback to homepage, Mobile Responsive
   render() {
     return (
       <div className="container">
