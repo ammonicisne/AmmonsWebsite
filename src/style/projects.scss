@@ -2,6 +2,10 @@
   display: grid;
   font-size: 1.5rem;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+  }
 
   .project-item-wrapper {
     position: relative;
@@ -12,6 +16,9 @@
       background-repeat: no-repeat;
       height: 250px;
       width: 100%;
+      @media screen and (max-width: 600px) {
+        height: 120px;
+      }
     }
 
     .img-text-wrapper {
@@ -36,6 +43,9 @@
       color: #da2d2d;
       font-weight: 400;
       cursor: pointer;
+      @media screen and (max-width: 600px) {
+        font-size: 9px;
+      }
     }
   }
 }

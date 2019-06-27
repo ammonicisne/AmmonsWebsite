@@ -76,3 +76,12 @@ circle {
     color: #da2d2d;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .welcome {
+    font-size: 5rem;
+    &:hover {
+      font-size: 5.8rem;
+    }
+  }
+}

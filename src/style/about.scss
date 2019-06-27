@@ -8,6 +8,9 @@
     padding-top: 10rem;
     font-size: 5rem;
     color: rgb(223, 223, 223);
+    @media screen and (max-width: 600px) {
+      font-size: 3rem;
+    }
   }
 }
 .icon {
@@ -19,18 +22,30 @@
   height: 7rem;
   color: rgb(219, 219, 219);
   transition: 0.2s ease-in-out;
+  @media screen and (max-width: 600px) {
+    width: 5rem;
+    height: 2rem;
+    font-size: 2rem;
+  }
 }
 .cards {
   color: rgb(17, 17, 17);
   padding-top: 3rem;
   display: flex;
   flex-direction: row;
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+  }
   .card {
     width: 17rem;
     height: 7rem;
     background-color: rgb(109, 109, 109);
     border: 5px rgb(109, 109, 109) solid;
     transition: 0.2s ease-in-out;
+    @media screen and (max-width: 600px) {
+      width: 5rem;
+      height: 2rem;
+    }
     &:hover {
       border-color: #da2d2d;
       .icon {
@@ -43,6 +58,10 @@
       width: 70rem;
       height: 30rem;
       transition: 0.2s ease-in-out;
+      @media screen and (max-width: 600px) {
+        width: 28rem;
+        height: 13rem;
+      }
     }
   }
   .card {
@@ -57,11 +76,19 @@
       padding-top: 4px;
       padding-bottom: 4px;
       padding-left: 15px;
+      @media screen and (max-width: 600px) {
+        font-size: 6px;
+        padding-left: 0px;
+      }
     }
     .sli {
       color: rgb(37, 37, 37);
       font-size: 12px;
       padding-left: 19px;
+      @media screen and (max-width: 600px) {
+        font-size: 5.2px;
+        padding-left: 0px;
+      }
     }
   }
 }
@@ -70,14 +97,26 @@
   color: rgb(37, 37, 37);
   font-size: 12px;
   padding-left: 8px;
+  @media screen and (max-width: 600px) {
+    font-size: 5.2px;
+    padding-left: 0px;
+  }
 }
 .lang {
   padding-left: 15px;
+  @media screen and (max-width: 600px) {
+    font-size: 5.2px;
+    padding-left: 0px;
+  }
 }
 .plat {
   color: rgb(37, 37, 37);
   font-size: 12px;
   padding-left: 28px;
+  @media screen and (max-width: 600px) {
+    font-size: 5.2px;
+    padding-left: 1rem;
+  }
 }
 #awards {
   //error if changed to different ID name
@@ -89,6 +128,11 @@
   white-space: nowrap;
   width: 70em;
   animation: type 3s steps(60, end);
+  @media screen and (max-width: 600px) {
+    margin-top: 1px;
+    padding: 0px;
+    font-size: 7px;
+  }
 }
 @keyframes type {
   from {
