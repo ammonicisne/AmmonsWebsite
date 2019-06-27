@@ -9,7 +9,7 @@
     font-size: 5rem;
     color: rgb(223, 223, 223);
     @media screen and (max-width: 600px) {
-      font-size: 3rem;
+      font-size: 4rem;
     }
   }
   .iconPhone {
@@ -43,8 +43,8 @@
       transition: 0.2s ease-in-out;
       border-color: #da2d2d;
       @media screen and (max-width: 600px) {
-        width: 23rem;
-        height: 30rem;
+        width: 27rem;
+        height: 43rem;
       }
       .iconPhone {
         transition: 0.2s ease-in-out;
@@ -59,7 +59,7 @@
       text-align: center;
       color: rgb(37, 37, 37);
       @media screen and (max-width: 600px) {
-        font-size: 10px;
+        font-size: 1.5rem;
       }
     }
   }
@@ -82,14 +82,14 @@
     font-size: 5rem;
     transition: 0.2s ease-in-out;
     @media screen and (max-width: 600px) {
-      font-size: 30px;
+      font-size: 4.8rem;
     }
     &:hover {
       font-size: 6rem;
       color: #da2d2d;
       transition: 0.2s ease-in-out;
       @media screen and (max-width: 600px) {
-        font-size: 34px;
+        font-size: 6rem;
       }
     }
   }
